@@ -1,11 +1,11 @@
 
 <?php
 
-require_once '../app/class/Compteur.php';
+require_once '../app/class/DoubleCompteur.php';
 
 $counterStorage = '../app/data/compter.data';
 
-$compteur = new Compteur($counterStorage);
+$compteur = new DoubleCompteur($counterStorage);
 $compteur->incrementer();
 $vues = $compteur->nombreVues();
 ?>

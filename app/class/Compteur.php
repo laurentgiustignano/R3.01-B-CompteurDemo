@@ -2,7 +2,7 @@
 
 readonly class Compteur {
 
-  public function __construct(private string $filename) { }
+  public function __construct(protected string $filename) { }
 
   public function incrementer(): void {
     $compteur = 1;
